@@ -14,7 +14,7 @@ Software utilized:
 * Jupyter Notebook v. 6.0.3
 * Visual Studio Code Version: 1.47.3
 
-Libraries used: 
+Python libraries used: 
 
 * Pandas
 * Numpy
@@ -41,11 +41,29 @@ We observed 1700 data points, from 9 weather stations on Oahu for June months an
 ## Summary: 
 Our data analysis shows that the temperature across Oahu in the months of June and December is mostly in the 70s and 80s, and while December has a lower absolute temperature- (minimum 56 degrees, compared to June's minimum of only 64), 75% of the days in December across the almost 7 years studied were above 69 degrees. June had 75% of days at or above 73 degrees and 25% of days at or above 77 degrees.
 
-In order to provide a fuller picture of weather conditions that may impact our planned surf & ice cream shop's sales, we looked at the precipitation data available in the dataset and ran similar queries to those performed for temperature.  From these queries we generated statistical summary tables and we can see that there has been a marginally lower amount of rainfall in June than December (mean of 0.13 inches compared to 0.21 inches). Both months have 
+In order to provide a fuller picture of weather conditions that may impact our planned surf & ice cream shop's sales, we looked at the precipitation data available in the dataset and ran similar queries to those performed for temperature.  From these queries we generated statistical summary tables and we can see that there has been a marginally lower amount of rainfall in June than December (mean of 0.13 inches compared to 0.21 inches). Both months recorded almost no rain (0.03 inches or less) half of the time although there are maximim pecipation readings of 4.43 inches for June and 6.42 for December, indicating that large amounts of rain can occur in both months but occurs less than 25% of the time.
 
 
-![June_Temperatures](./additional_resources/June_rainfall.png)
+![June_prcp](./additional_resources/June_rainfall.png)
 
 
 
-![December_Temperatures](./additional_resources/December_rainfall.png)
+![December_prcp](./additional_resources/December_rainfall.png)
+
+Looking at a distribution of the precipitation data for June as well as December, we can see that a majority of days had very little or no rain. There are, however some days with higher amounts of rain and a small amount of days with significant amounts of rain- and December has the higher rainfall in inches per day.
+
+![June_prcp_densityplot](./additional_resources/June_prcp_density.png)
+
+
+
+![December_prcp_densityplot](./additional_resources/December_prcp_density.png)
+
+While more days have very little or no rain, a deeper dive shows that June had 5% of days with 0.71 inches of rain, 1% of days with 1.66 inches and 0.5% of days with more than 2 inches of rain.
+
+![June_prcp_quantiles](./additional_resources/June_prcp_quantiles.png)
+
+Looking at December rainfall on Oahu, we see that more days had more rainfall than June, 5% of days had 1.15 inches and 1% of days had 2.76 inches.
+![December_prcp_quantiles](./additional_resources/December_prcp_quantiles.png)
+
+
+
