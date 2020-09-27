@@ -1,13 +1,13 @@
 # SurfsUp Challenge:  Weather Trend Analysis using SQLAlchemy & Python
 
 ## Overview of the analysis: 
-This analysis project was undertaken as part of analysis of weather patterns on the Island of Oahu, to inform potential investors about seasonal weather trends that may affect the level of business the planned surf & ice cream shop may experience. We began by using the provided weather dataset for Oahu- querying data with almost 20,000 datapoints from 9 weather stations across the island, over almost 7 years, to find the temperature and precipitation ranges and ditributions. We then focused on 2 months of data: June and December and built queries to find the temperatures for these 2 months across the several years included in the dataset.
+This analysis project was undertaken as part of analysis of weather patterns on the Island of Oahu, to inform potential investors about seasonal weather trends that may affect the level of business the planned surf & ice cream shop may experience. We began by using the provided weather dataset for Oahu- querying almost 20,000 datapoints from 9 weather stations across the island, over a period of almost 7 years, to find the temperature and precipitation ranges and ditributions. We then focused on 2 months of data: June and December and built queries to find the temperatures for these 2 months across the several years included in the dataset.
 
 
 
 ## Resources
 Data source provided:  
-hawaii.sqlite Dataset
+* hawaii.sqlite Dataset
 
 Software utilized: 
 
@@ -20,6 +20,7 @@ Python libraries used:
 * Numpy
 * Datetime 
 * SqlAlchemy
+
 
 
 ## Results: 
@@ -35,7 +36,7 @@ Our analysis shows the temperatures captured by the weather stations on Oahu for
 
 ![December_Temperatures](./additional_resources/December_Temperature_Summary_Statistics.png)
 
-We observed 1700 data points, from 9 weather stations on Oahu for June months and 1517 data points for December. 
+We queried the 1700 data points observed, from 9 weather stations on Oahu for June months and 1517 data points for December. 
 
 
 ## Summary: 
